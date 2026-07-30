@@ -11,31 +11,53 @@
 
 // Array , Object ,function
 
-const id = Symbol('123');
-const anotherId = Symbol('123');
-console.log(id);
-console.log(anotherId);
-console.log(id === anotherId);
+// const id = Symbol('123');
+// const anotherId = Symbol('123');
+// console.log(id);
+// console.log(anotherId);
+// console.log(id === anotherId);
 
-const bigInteger = 2345326789837n;
+// const bigInteger = 2345326789837n;
 
 
 
-const arr =["dibu","bunty","minu","chuttu"];
-const obj = {
-    name : "dibu",
-    age : 23
-};
-const myFun = function(){
-    console.log("hello ");
+// const arr =["dibu","bunty","minu","chuttu"];
+// const obj = {
+//     name : "dibu",
+//     age : 23
+// };
+// const myFun = function(){
+//     console.log("hello ");
     
-}
+// }
 
-console.log(typeof(bigInteger));  // bigint
-console.log(typeof(arr));         //object : special type of object
-console.log(typeof(obj));         //object
-console.log(typeof(myFun));       //function (called as object functopn)
-console.log(typeof(id));       //symbol
+// console.log(typeof(bigInteger));  // bigint
+// console.log(typeof(arr));         //object : special type of object
+// console.log(typeof(obj));         //object
+// console.log(typeof(myFun));       //function (called as object function)
+// console.log(typeof(id));       //symbol
+
+
+// ************************ Memory *******************
+
+//Stack (Primitive) [when we copy we get the copy] & Heap (Non-Primitive) [when we copy we get the reference of the actual value]
+
+let name ="dibu";
+let anotherName = name;
+anotherName = "bunty";
+console.table([name,anotherName]);  //dibu , bunty
+
+let user = {
+    name : "dibu",
+    email : "dibu@gmail.com"
+};
+
+let user2 =user;
+user2.name = "bunty";
+
+console.log(user.name); //bunty
+console.log(user2.name); //bunty
+
 
 
 
