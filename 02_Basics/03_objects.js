@@ -1,8 +1,8 @@
 //Singelton
 //object.create
 
-//object literal
 
+//object literal
 const jsUsers = {
     name : "Divyanshu" ,            //the key  are already treated as string either we put in quotes or not
     "full name" : "Divyasnhu Bharadwaj",
