@@ -5,12 +5,12 @@ but there is one more important thing about it ,it also
 prevent the function to be polluted by any global variable */
 
 
-// let count = 10;
+let count = 10;
 
-// (function () {
-//     let count = 5;
-//     console.log(count); // 5
-// })();
+(function () {
+    let count = 5;
+    console.log(count); // 5
+})();
 
 //()()
 
@@ -32,7 +32,7 @@ Since there is no function name/reference saved, you cannot call it again afterw
 
 (() => {
     console.log(`DB CONNECTED TWO`);
-})();
+})(); //here we must put semicolon 
 
 ((name) => {
     console.log(`DB CONNECTED TWO ${name}`);
