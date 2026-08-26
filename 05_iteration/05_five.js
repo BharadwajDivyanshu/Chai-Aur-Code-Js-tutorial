@@ -1,4 +1,4 @@
-//for each loop is inbuilt prototype od=f array and this is what we willl use the most
+//for each loop is inbuilt prototype of array and this is what we will use the most
 
 const coding = ["ruby","c++","java","python"];
 //in this we have to give a callback function
